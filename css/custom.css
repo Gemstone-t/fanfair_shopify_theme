@@ -608,13 +608,12 @@ article.featured-image > .text-content > .button{
 /* partnership section */
 
 .partnership .panel{
-    height: 360px;
     margin: -150px 150px 150px 150px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.85);
     box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(10px);
-    padding: 0 80px;
+    padding: 100px 80px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -630,10 +629,39 @@ article.featured-image > .text-content > .button{
     line-height: 50px; /* 111.111% */
 }
 
-.partnership .panel > .logo {
-    width: 481px;
-    height: 157px;
+.partnership .panel > .logo img {
+    width: 25vw;
+    height: auto;
     flex-shrink: 0;                                 
+}
+
+@media(max-width: 1200px){
+    .partnership .panel {
+        flex-direction: column;
+        padding: 36px 24px;
+        margin: -120px 26px 120px 26px;
+    }
+    .partnership .panel > p {
+        width: auto;
+        color: #3A3A3A;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 133.333% */
+    }
+    .partnership .panel > .logo{
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 768px){
+    .partnership .panel > .logo img {
+        width: 200px;
+        height: auto;
+        flex-shrink: 0;                                 
+    }
 }
 
 /* keepsakes-elevated */
