@@ -665,7 +665,11 @@ article.featured-image > .text-content > .button{
 }
 
 /* keepsakes-elevated */
-
+.keepsakes-elevated .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .keepsakes-elevated .information > .title {
     padding: 0 50px;
@@ -679,7 +683,8 @@ article.featured-image > .text-content > .button{
 }
 
 .keepsakes-elevated .information > .description {
-    padding: 0 550px;
+    text-align: center;
+    width: calc(125vw / 3);
     color: #000;
     text-align: center;
     font-family: "Poppins", sans-serif;
@@ -704,8 +709,54 @@ article.featured-image > .text-content > .button{
 
 .keepsakes-elevated .panel > .right{
     margin-left: 80px;
+    display: flex;
+    width: 56vw;
 }
 
+.keepsakes-elevated .panel > .right > .product-1 img{
+    width: 35.9375vw;
+}
+
+.keepsakes-elevated .panel > .right > .product-ipad {
+    position: relative;
+    top: 23vw;
+    left: -17.5vw;
+}
+
+.keepsakes-elevated .panel > .right > .product-ipad img{
+    width: 26.5625vw;
+}
+
+.keepsakes-elevated .panel > .right > .product-arrow {
+    position: relative;
+    top: 15vw;
+    left: -37vw;
+}
+
+.keepsakes-elevated .panel > .right > .product-arrow img{
+    width: 9.0625vw;
+}
+
+.keepsakes-elevated .panel > .right > .product-sign{
+    position: relative;
+    top: 13vw;
+    left: -38vw;
+}
+
+.keepsakes-elevated .panel > .right > .product-sign img{
+    width: 17.8125vw;
+}
+
+.keepsakes-elevated .panel > .right > .product-pencil {
+    position: relative;
+    top: 37vw;
+    left: -76.5vw;
+}
+
+.keepsakes-elevated .panel > .right > .product-pencil img{
+    width: 19.21875vw;
+    position: relative;
+}
 
 /* start of authentic component */
 
