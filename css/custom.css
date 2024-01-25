@@ -1001,7 +1001,7 @@ article.featured-image > .text-content > .button{
 /* how-it-works section */
 
 .how-it-works .panel{
-    height: 520px;
+    padding: 60px 20px;
     margin: 0 60px;
     background-color: #FEB801;
     color: #000;
@@ -1011,15 +1011,15 @@ article.featured-image > .text-content > .button{
 }
 
 .how-it-works .panel > .title{
-    width: 240px;
+    width: 12.5vw;
     flex-shrink: 0;
 
     color: #000;
     font-family: Oswald;
-    font-size: 75px;
+    font-size: 3.90625vw;
     font-style: normal;
     font-weight: 700;
-    line-height: 78px; /* 104% */
+    line-height: 104%;
 }
 
 .how-it-works .panel  .component-content {
@@ -1027,9 +1027,41 @@ article.featured-image > .text-content > .button{
 }
 
 .how-it-works .panel .right-arrow {
-    height: 200px;
+    height: calc(31.25vw / 3);
 }
 
+.how-it-works .panel .right-arrow img {
+    width: 6.5vw;
+}
+
+@media(max-width: 768px) {
+    .how-it-works .panel{
+        margin: 0;
+        padding: 0 0 40px 0;
+        flex-direction: column;
+    }
+    .how-it-works .panel > .title{
+        width: auto;
+        padding: 24px 9px;
+        color: #000;
+        text-align: center;
+        font-family: Oswald;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 60px; /* 150% */
+    }
+    .how-it-works .panel .component-content {
+        flex-direction: column;
+        padding: 0 32px;
+    }
+    .how-it-works .panel .component-content .how-it-work-component{
+        margin-top: 10px;
+    }
+    .how-it-works .panel .right-arrow {
+        display: none;
+    }
+}
 
 /* start of how-it-work-component */
 
@@ -1040,13 +1072,13 @@ article.featured-image > .text-content > .button{
 }
 
 .how-it-work-component .pic img{
-    width: 126px;
+    width: 6.5625vw;
 }
 
 .how-it-work-component .title{
     text-align: center;
     font-family: Oswald;
-    font-size: 45px;
+    font-size: 2.34375vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -1054,14 +1086,42 @@ article.featured-image > .text-content > .button{
 }
 
 .how-it-work-component .description{
-    width: 340px;
+    width: 17.8125vw;
     flex-shrink: 0;
     text-align: center;
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 1.25vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 27px; /* 112.5% */
+    line-height: 112.5%;
+}
+
+@media(max-width: 768px) {
+    .how-it-work-component .pic img {
+        width: 100px;
+    }
+    .how-it-work-component .title {
+        width: auto;
+        
+        color: #000;
+        text-align: center;
+        font-family: Oswald;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 44px;
+        text-transform: capitalize;
+    }
+    .how-it-work-component .description {
+        width: auto;
+        color: #000;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 133.333% */
+    }
 }
 
 /* end of how-it-work-component */
