@@ -708,7 +708,7 @@ article.featured-image > .text-content > .button{
 }
 
 .keepsakes-elevated .panel > .right{
-    margin-left: 80px;
+    margin-left: 5vw;
     display: flex;
     width: 56vw;
 }
@@ -1239,6 +1239,12 @@ article.featured-image > .text-content > .button{
     overflow: hidden;
 }
 
+@media(max-width: 1200px){
+    .more-legends .subtitle {
+        width: 100%;
+    }
+}
+
 @media(max-width: 768px){
     .more-legends .panel .title{
         padding: 0 25px;
@@ -1406,7 +1412,9 @@ article.featured-image > .text-content > .button{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 270px;
+    min-height: 270px;
+    height: 100%;
+
 }
 
 .feature-card > .information > .title {
@@ -1512,6 +1520,7 @@ footer .up-footer .social{
 
 .social > .social-item {
     margin-right: 30px;
+    margin-bottom: 32px;
     display: flex;
 
     color: #FFF;
@@ -1588,7 +1597,7 @@ footer .down-footer{
     background-color: #0F0F0F;
     display: flex;
     justify-content: space-between;
-    padding: 16px 375px;
+    padding: 16px 19.53125vw;
 }
 footer .down-footer > .footer-nav{
     display: flex;
@@ -1617,5 +1626,70 @@ footer .down-footer > .copyright{
     font-style: normal;
     font-weight: 600;
     line-height: 28px; /* 200% */
+}
+
+@media(max-width: 1200px) {
+    footer .up-footer{
+        padding: 50px;
+    }
+    footer .up-footer .contacts {
+        margin-left: 50px;
+    }
+    footer .up-footer .services{
+        margin-left: 50px;
+    }
+    footer .down-footer {
+        padding: 13px 50px 22px 50px;
+    }
+    footer .down-footer > .footer-nav {
+        width: 65%;
+    }
+}
+
+@media(max-width: 768px) {
+    footer .up-footer{
+        display: flex;
+        flex-direction: column;
+        padding: 45px 18px 35px 24px;
+        background: #3A3A3A;
+    }
+    footer .up-footer .explain{
+        margin: 0;
+    }
+    footer .up-footer .explain > img{
+        width: 131px;
+    }
+    footer .up-footer .explain > p{
+        margin: 16px 0;
+    }
+    footer .up-footer .contacts {
+        margin: 8px 0 0 0;
+    }
+    .contacts > .contacts-item {
+        margin-bottom : 0;
+    }
+    footer .up-footer .services {
+        margin: 40px 0 0 0;
+    }
+    .services > .services-item {
+        margin-bottom : 0;
+    }
+    footer .down-footer {
+        padding: 13px 24px 22px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer .down-footer > .footer-nav {
+        width: 100%;
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    footer .down-footer > .footer-nav p{
+        margin-right: 43px;
+    }
+    footer .down-footer > .copyright {
+        margin-top: 24px;
+    }
 }
 
