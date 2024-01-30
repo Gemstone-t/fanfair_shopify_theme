@@ -1386,11 +1386,11 @@ article.featured-image > .text-content > .button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 360px;
+    width: 18.75vw;
 }
 
 .feature-card > .pic{
-    height: 400px;
+    height: 20.833333333333333333333333333333vw;
 }
 
 .feature-card > .pic > img{
@@ -1429,6 +1429,31 @@ article.featured-image > .text-content > .button{
     line-height: normal;
 }
 
+@media(max-width: 1200px) {
+    .feature-card {
+        width: 100%;
+    }
+    .feature-card > .pic {
+        height: auto;
+    }
+    .feature-card > .pic > img {
+        width: calc(48vw - 50px);
+    }
+}
+
+@media(max-width: 768px) {
+    .feature-card {
+        width: 100%;
+    }
+    .feature-card > .pic {
+        height: auto;
+    }
+    .feature-card > .pic > img {
+        width: calc(100vw - 52px);
+        height: 51.448vw;
+    }
+}
+
 /* end of feature-card component */
 
 /* feature-reviews section */ 
@@ -1436,9 +1461,28 @@ article.featured-image > .text-content > .button{
 .feature-reviews .panel{
     background-image: url('/img/background-feature-review.png');
     background-repeat: no-repeat;
-    padding: 100px 300px;
+    padding: 100px 15.625vw;
+}
+
+#feature_review_slide .splide__slide{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+@media(max-width: 1200px){
+    .feature-reviews .panel{
+        padding : 50px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 768px){
+    .feature-reviews .panel{
+        padding : 26px;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /* footer section */
@@ -1463,6 +1507,7 @@ footer .up-footer .explain{
 footer .up-footer .social{
     margin-top: 30px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .social > .social-item {

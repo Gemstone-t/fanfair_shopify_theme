@@ -44,17 +44,29 @@ document.addEventListener('DOMContentLoaded', function () {
   legen_style()
 
   legend_slide.on('move', function (destIndex) {
-    console.log(destIndex)
     legend_move(destIndex)
   })
 
-  //   legend_slide.on('moved', function () {
-  //     legen_style()
-  //   })
+  var feature_review_slide = new Splide('#feature_review_slide', {
+    perPage: 3,
+    focus: 'center',
+    width: '64.0625vw',
+    gap: '4vw',
+    breakpoints: {
+      1200: {
+        perPage: 2,
+        width: '100%'
+      },
+      768: {
+        perPage: 2,
+        width: '100%'
+      }
+    }
+  })
+  feature_review_slide.mount()
 })
 
 window.addEventListener('resize', function () {
-  console.log('okkkkkk')
   legen_style()
 })
 
